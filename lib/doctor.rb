@@ -19,11 +19,11 @@ end
 
 def appointments
   Appointment.all.each do |appoint|
-    appoint.doctor
+    appoint.doctor == self
 end
 
 def patients
-
+  appointments.map {|appoint| appoint.patient}
 end
 
 end
