@@ -22,4 +22,8 @@ def appointments
     appoint.doctor
 end
 
+def patients
+
+end
+
 end
