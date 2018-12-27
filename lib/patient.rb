@@ -22,4 +22,8 @@ def appointments
     appoint.patient == self
 end
 
+def doctors
+  appointments.map {|appoint| appoint.doctor}
+end
+
 end
