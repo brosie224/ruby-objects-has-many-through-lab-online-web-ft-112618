@@ -18,7 +18,8 @@ def new_appointment(date, patient)
 end
 
 def appointments
-
+  Appointment.all.each do |appoint|
+    appoint.doctor
 end
 
 end
