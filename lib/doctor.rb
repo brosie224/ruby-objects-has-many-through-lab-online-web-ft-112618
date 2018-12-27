@@ -20,6 +20,7 @@ end
 def appointments
   Appointment.all.each do |appoint|
     appoint.doctor == self
+  end
 end
 
 def patients
