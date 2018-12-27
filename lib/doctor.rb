@@ -18,7 +18,7 @@ def new_appointment(date, patient)
 end
 
 def appointments
-  Appointment.all.each do |appoint|
+  Appointment.all.select do |appoint|
     appoint.doctor == self
   end
 end
